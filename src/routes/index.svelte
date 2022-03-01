@@ -1,2 +1,20 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+
+
+<script context="module">
+    //  prerender this page 
+    export const prerender = true;
+    export async function load({ session }) {
+        const { user } = session;
+
+        if (! user) {
+            return {
+                status: 302,
+                redirect: "/home"
+            };
+        }
+
+        return {};
+    }
+</script>
+  
+  

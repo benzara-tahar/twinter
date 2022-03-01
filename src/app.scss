@@ -1,0 +1,33 @@
+/* Write your global styles here, in SCSS syntax. Variables and mixins from the src/variables.scss file are available here without importing */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* modal styles */
+.twitty-modal-container {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* allow click-through to backdrop */
+	pointer-events: none;
+
+	.twitty-modal {
+		pointer-events: auto;
+	}
+}
+
+.twitty-backdrop {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.253);
+	/* backdrop-filter: */
+	backdrop-filter: grayscale(1) blur(5px);
+}
