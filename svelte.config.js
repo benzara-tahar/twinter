@@ -24,6 +24,8 @@ const config = {
 				alias: {
 					$static: path.resolve('./static'),
 					$data: path.resolve('./src/data'),
+					$types: path.resolve('./src/types'),
+					$store: path.resolve('./src/+store'),
 					$layout: path.resolve('./src/layout')
 				}
 			}

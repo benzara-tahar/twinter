@@ -1,11 +1,11 @@
 <script context="module" lang="ts">
-	export async function load({ params, fetch, session, stuff }) {
-		return {
-			props: {
-				message: 'this is actually working!'
-			}
-		};
-	}
+	// export async function load({ params, fetch, session, stuff }) {
+	// 	return {
+	// 		props: {
+	// 			message: 'this is actually working!'
+	// 		}
+	// 	};
+	// }
 </script>
 
 <script lang="ts">
@@ -13,13 +13,10 @@
 
 	import { Modals, closeModal } from 'svelte-modals';
 	import '../app.scss';
-
-	export let message: string;
 </script>
 
 <!--------------------markup ------------------->
 
-<h1>{message}sss</h1>
 <Navbar />
 <div class="container mx-auto min-h-screen">
 	<main>
